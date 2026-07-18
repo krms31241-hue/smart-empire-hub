@@ -68,18 +68,20 @@
     position: fixed;
     z-index: 1000;
     left: 0; top: 0; width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.85);
+    backdrop-filter: blur(8px);
 }
 .modal-content {
     background: var(--bg-card);
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 32px;
     border: 1px solid var(--border-color);
-    border-radius: 16px;
+    border-radius: 20px;
     width: 90%;
-    max-width: 500px;
+    max-width: 550px;
     position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 .close-modal {
     position: absolute;
@@ -88,23 +90,140 @@
     cursor: pointer;
     color: var(--text-secondary);
 }
-.payment-methods {
+.modal-subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+/* Payment Sections */
+.payment-section {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.payment-section.primary {
+    border-color: var(--accent-yellow);
+    background: rgba(251, 191, 36, 0.05);
+}
+
+.section-header { margin-bottom: 16px; }
+.section-header h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+.section-desc { font-size: 13px; color: var(--text-secondary); }
+
+.recommended-badge {
+    display: inline-block;
+    background: var(--accent-yellow);
+    color: #000;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.card-methods {
+    display: flex;
+    gap: 12px;
+    margin: 16px 0;
+    font-size: 32px;
+    color: var(--text-secondary);
+}
+
+.btn-pay-card {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.btn-pay-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
+}
+
+.secure-note {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-top: 12px;
+}
+
+/* Divider */
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0; right: 0;
+    height: 1px;
+    background: var(--border-color);
+}
+.divider span {
+    background: var(--bg-card);
+    padding: 0 16px;
+    position: relative;
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Local Methods */
+.local-methods {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-top: 24px;
+    gap: 10px;
+    margin-top: 16px;
 }
 .method {
     background: rgba(255,255,255,0.05);
-    padding: 16px;
+    padding: 14px;
     border-radius: 8px;
     text-align: center;
     cursor: pointer;
     border: 1px solid transparent;
     transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 .method:hover { border-color: var(--accent-yellow); background: rgba(255,255,255,0.1); }
-.method i { font-size: 24px; margin-bottom: 8px; display: block; color: var(--accent-yellow); }
+.method i { font-size: 18px; color: var(--accent-yellow); }
+.method span { font-size: 13px; font-weight: 600; }
+
+/* Instruction Box */
+.instruction-box {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    border-left: 3px solid var(--accent-yellow);
+}
+.instruction-box p { margin-bottom: 10px; font-size: 14px; }
+.account-info {
+    background: rgba(251, 191, 36, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    margin: 12px 0;
+}
 
 .btn-whatsapp {
     display: block;
@@ -117,10 +236,12 @@
     text-decoration: none;
     font-weight: 700;
     margin-top: 16px;
+    transition: 0.2s;
 }
 .btn-whatsapp:hover { background: #128C7E; }
 
 @media (max-width: 768px) {
     .pricing-card.featured { transform: none; }
-    .payment-methods { grid-template-columns: 1fr; }
+    .local-methods { grid-template-columns: 1fr; }
+    .modal-content { margin: 10% auto; padding: 24px; }
 }
