@@ -1,155 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Plans - Smart Empire Hub</title>
-    <meta name="description" content="Unlock advanced tools and remove ads with our Premium plans.">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/premium.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Plans - Smart Empire Hub</title>
+  <meta name="description" content="Unlock advanced tools and priority support with our Premium plans.">
+  <link rel="canonical" href="https://smartempirehub.com/premium/">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/premium.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="/" class="logo">⚡ Smart Empire Hub</a>
-            <nav class="nav">
-                <a href="/">Home</a>
-                <a href="/categories/">Categories</a>
-                <a href="/premium/" class="active">Premium</a>
-            </nav>
-        </div>
-    </header>
+  <header class="header">
+    <div class="container">
+      <a href="/" class="logo">⚡ Smart Empire Hub</a>
+      <nav class="nav">
+        <a href="/">Home</a>
+        <a href="/categories/">Categories</a>
+        <a href="/premium/" class="active">Premium</a>
+      </nav>
+    </div>
+  </header>
 
-    <main class="premium-page">
-        <div class="container">
-            <div class="page-header">
-                <div class="badge">Unlock Full Potential</div>
-                <h1>Choose Your Premium Plan</h1>
-                <p>Get access to advanced tools, remove ads, and boost your productivity.</p>
+  <main class="premium-page">
+    <div class="container">
+      <div class="page-header">
+        <div class="badge">Unlock Full Potential</div>
+        <h1>Choose Your Premium Plan</h1>
+        <p>Get access to advanced tools and boost your productivity.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Free</h3>
+          <div class="price">$0<span>/forever</span></div>
+          <ul class="features">
+            <li>Access to 100+ basic tools</li>
+            <li>Standard processing speed</li>
+            <li>Community support</li>
+          </ul>
+          <button class="btn-plan disabled" disabled>Current Plan</button>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="popular-badge">Most Popular</div>
+          <h3>Pro</h3>
+          <div class="price">$5<span>/month</span></div>
+          <ul class="features">
+            <li>Access to ALL 1000+ tools</li>
+            <li>Priority processing speed</li>
+            <li>No Ads</li>
+            <li>Priority email support</li>
+          </ul>
+          <button class="btn-plan" onclick="openPayment('Pro', '5')">Get Pro Now</button>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Business</h3>
+          <div class="price">$15<span>/month</span></div>
+          <ul class="features">
+            <li>Everything in Pro</li>
+            <li>Team collaboration (5 users)</li>
+            <li>Dedicated account manager</li>
+            <li>Custom integrations</li>
+          </ul>
+          <button class="btn-plan" onclick="openPayment('Business', '15')">Get Business</button>
+        </div>
+      </div>
+
+      <div id="payment-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-content">
+          <button class="close-modal" onclick="closeModal()" aria-label="Close">&times;</button>
+          <h2 id="modal-title">Complete Your Payment</h2>
+          <p class="modal-subtitle" id="modal-plan-name"></p>
+
+          <div class="payment-section primary">
+            <h3>💳 Pay Securely with Card</h3>
+            <p class="section-desc">Instant activation. Works worldwide.</p>
+            <button class="btn-pay-card" onclick="processCardPayment()">
+              🔒 Pay Securely Now
+            </button>
+            <p class="secure-note">Secured by 256-bit SSL encryption</p>
+          </div>
+
+          <div class="divider"><span>OR</span></div>
+
+          <div class="payment-section alternative">
+            <h3>📱 Local Payment Methods</h3>
+            <p class="section-desc">For Egypt & Middle East users</p>
+            <div class="local-methods">
+              <div class="method" onclick="selectLocalMethod('InstaPay')" role="button" tabindex="0">
+                <span>🏦</span><span>InstaPay</span>
+              </div>
+              <div class="method" onclick="selectLocalMethod('Vodafone Cash')" role="button" tabindex="0">
+                <span>📱</span><span>Vodafone Cash</span>
+              </div>
+              <div class="method" onclick="selectLocalMethod('Orange Cash')" role="button" tabindex="0">
+                <span>📱</span><span>Orange Cash</span>
+              </div>
             </div>
 
-            <div class="pricing-grid">
-                <!-- Free Plan -->
-                <div class="pricing-card">
-                    <h3>Free</h3>
-                    <div class="price">$0<span>/forever</span></div>
-                    <ul class="features">
-                        <li>Access to 100+ basic tools</li>
-                        <li>Standard processing speed</li>
-                        <li>Ads supported</li>
-                        <li>Community support</li>
-                    </ul>
-                    <button class="btn-plan disabled">Current Plan</button>
-                </div>
-
-                <!-- Pro Plan -->
-                <div class="pricing-card featured">
-                    <div class="popular-badge">Most Popular</div>
-                    <h3>Pro</h3>
-                    <div class="price">$5<span>/month</span></div>
-                    <ul class="features">
-                        <li>Access to ALL 1000+ tools</li>
-                        <li>Priority processing speed</li>
-                        <li>No Ads</li>
-                        <li>Advanced API access</li>
-                        <li>Priority email support</li>
-                    </ul>
-                    <button class="btn-plan" onclick="openPayment('Pro', '5')">Get Pro Now</button>
-                </div>
-
-                <!-- Business Plan -->
-                <div class="pricing-card">
-                    <h3>Business</h3>
-                    <div class="price">$15<span>/month</span></div>
-                    <ul class="features">
-                        <li>Everything in Pro</li>
-                        <li>White-label tools</li>
-                        <li>Team collaboration (5 users)</li>
-                        <li>Dedicated account manager</li>
-                        <li>Custom integrations</li>
-                    </ul>
-                    <button class="btn-plan" onclick="openPayment('Business', '15')">Get Business</button>
-                </div>
+            <div id="local-instructions" style="display:none;">
+              <div class="instruction-box">
+                <p><strong>Step 1:</strong> Send <span id="local-amount"></span> via <span id="local-method-name"></span></p>
+                <p class="account-info">Account: <strong id="payment-account"></strong></p>
+                <p><strong>Step 2:</strong> Send your Transaction ID via WhatsApp for activation</p>
+                <a id="whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                  💬 Confirm via WhatsApp
+                </a>
+              </div>
             </div>
-
-            <!-- Payment Modal - Dual System -->
-            <div id="payment-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close-modal">&times;</span>
-                    <h2>Complete Your Payment</h2>
-                    <p class="modal-subtitle" id="modal-plan-name"></p>
-
-                    <!-- Option 1: Card Payment (Primary & Automated) -->
-                    <div class="payment-section primary">
-                        <div class="section-header">
-                            <span class="recommended-badge">Recommended</span>
-                            <h3>💳 Pay Securely with Card</h3>
-                            <p class="section-desc">Instant activation. Works worldwide.</p>
-                        </div>
-                        <div class="card-methods">
-                            <i class="fab fa-cc-visa"></i>
-                            <i class="fab fa-cc-mastercard"></i>
-                            <i class="fab fa-cc-amex"></i>
-                        </div>
-                        <button class="btn-pay-card" onclick="processCardPayment()">
-                            <i class="fas fa-lock"></i> Pay Securely Now
-                        </button>
-                        <p class="secure-note"> Secured by 256-bit SSL encryption</p>
-                    </div>
-
-                    <!-- Divider -->
-                    <div class="divider">
-                        <span>OR</span>
-                    </div>
-
-                    <!-- Option 2: Local Wallets (Alternative) -->
-                    <div class="payment-section alternative">
-                        <div class="section-header">
-                            <h3>📱 Local Payment Methods</h3>
-                            <p class="section-desc">For Egypt & Middle East users</p>
-                        </div>
-                        <div class="local-methods">
-                            <div class="method" onclick="selectLocalMethod('InstaPay')">
-                                <i class="fas fa-university"></i>
-                                <span>InstaPay</span>
-                            </div>
-                            <div class="method" onclick="selectLocalMethod('Vodafone Cash')">
-                                <i class="fas fa-mobile-alt"></i>
-                                <span>Vodafone Cash</span>
-                            </div>
-                            <div class="method" onclick="selectLocalMethod('Orange Cash')">
-                                <i class="fas fa-mobile-alt"></i>
-                                <span>Orange Cash</span>
-                            </div>
-                            <div class="method" onclick="selectLocalMethod('Etisalat Cash')">
-                                <i class="fas fa-mobile-alt"></i>
-                                <span>Etisalat Cash</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Local Payment Instructions (Hidden by default) -->
-                        <div id="local-instructions" style="display:none;">
-                            <div class="instruction-box">
-                                <p><strong>Step 1:</strong> Send <span id="local-amount"></span> via <span id="local-method-name"></span></p>
-                                <p class="account-info">Account: <strong>[Your Account Number]</strong></p>
-                                <p><strong>Step 2:</strong> Click below to send your Transaction ID via WhatsApp for activation</p>
-                                <a id="whatsapp-link" href="#" target="_blank" class="btn-whatsapp">
-                                    <i class="fab fa-whatsapp"></i> Confirm via WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </main>
+      </div>
+    </div>
+  </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Smart Empire Hub. All rights reserved.</p>
-        </div>
-    </footer>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Smart Empire Hub. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <script src="/assets/js/premium.js"></script>
+  <script src="/assets/js/premium.js"></script>
 </body>
 </html>

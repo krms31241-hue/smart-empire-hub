@@ -1,44 +1,35 @@
 {
   "version": 2,
-  "public": true,
+  "cleanUrls": true,
+  "trailingSlash": false,
   "builds": [
-    {
-      "src": "apps/web/*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "assets/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "tools/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "public/**",
-      "use": "@vercel/static"
-    }
+    { "src": "apps/web/*.html", "use": "@vercel/static" },
+    { "src": "assets/**", "use": "@vercel/static" },
+    { "src": "tools/**", "use": "@vercel/static" },
+    { "src": "public/**", "use": "@vercel/static" }
   ],
   "routes": [
-    {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
-    },
-    {
-      "src": "/tools/(.*)",
-      "dest": "/tools/$1"
-    },
-    {
-      "src": "/public/(.*)",
-      "dest": "/public/$1"
-    },
-    {
-      "src": "/",
-      "dest": "/apps/web/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/apps/web/$1"
-    }
+    { "src": "/manifest.json", "dest": "/public/manifest.json" },
+    { "src": "/sw.js", "dest": "/public/sw.js" },
+    { "src": "/robots.txt", "dest": "/public/robots.txt" },
+    { "src": "/tools-index.json", "dest": "/public/tools-index.json" },
+    { "src": "/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "/tools/(.*)", "dest": "/tools/$1" },
+    { "src": "/", "dest": "/apps/web/index.html" },
+    { "src": "/categories", "dest": "/apps/web/categories.html" },
+    { "src": "/categories/", "dest": "/apps/web/categories.html" },
+    { "src": "/search", "dest": "/apps/web/search.html" },
+    { "src": "/search/", "dest": "/apps/web/search.html" },
+    { "src": "/premium", "dest": "/apps/web/premium.html" },
+    { "src": "/premium/", "dest": "/apps/web/premium.html" },
+    { "src": "/affiliate", "dest": "/apps/web/affiliate.html" },
+    { "src": "/affiliate/", "dest": "/apps/web/affiliate.html" },
+    { "src": "/dashboard", "dest": "/apps/web/dashboard.html" },
+    { "src": "/dashboard/", "dest": "/apps/web/dashboard.html" },
+    { "src": "/about", "dest": "/apps/web/about.html" },
+    { "src": "/about/", "dest": "/apps/web/about.html" },
+    { "src": "/contact", "dest": "/apps/web/contact.html" },
+    { "src": "/contact/", "dest": "/apps/web/contact.html" },
+    { "src": "/(.*)", "dest": "/apps/web/404.html", "status": 404 }
   ]
 }
