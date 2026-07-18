@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "public": true,
   "builds": [
     {
       "src": "apps/web/*.html",
@@ -26,6 +27,14 @@
     {
       "src": "/tools/(.*)",
       "dest": "/tools/$1"
+    },
+    {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/apps/web/index.html"
     },
     {
       "src": "/(.*)",
