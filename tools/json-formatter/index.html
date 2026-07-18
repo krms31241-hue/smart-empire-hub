@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Formatter - Smart Empire Hub</title>
+    <meta name="description" content="Format, validate, and beautify JSON data instantly. Free online JSON tool.">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/tool.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">⚡ Smart Empire Hub</a>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="/categories/">Categories</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="tool-container">
+        <div class="tool-header">
+            <h1>JSON Formatter</h1>
+            <p>Format, validate, and beautify your JSON data instantly</p>
+        </div>
+
+        <div class="tool-interface json-tool">
+            <div class="json-toolbar">
+                <button id="format-btn" class="btn-toolbar">Format JSON</button>
+                <button id="minify-btn" class="btn-toolbar">Minify</button>
+                <button id="validate-btn" class="btn-toolbar">Validate</button>
+                <button id="clear-btn" class="btn-toolbar">Clear</button>
+            </div>
+
+            <div class="json-editor">
+                <textarea id="json-input" placeholder="Paste your JSON here..."></textarea>
+            </div>
+
+            <div class="json-output" id="json-output" style="display: none;">
+                <pre id="formatted-json"></pre>
+            </div>
+
+            <div class="json-actions" id="json-actions" style="display: none;">
+                <button id="copy-btn" class="btn-action">Copy to Clipboard</button>
+                <button id="download-btn" class="btn-action">Download .json</button>
+            </div>
+
+            <div class="json-status" id="json-status"></div>
+        </div>
+
+        <div class="tool-info">
+            <div class="info-section">
+                <h3>How to Use</h3>
+                <p>1. Paste your JSON in the input area<br>
+                   2. Click "Format JSON" to beautify or "Minify" to compress<br>
+                   3. Click "Validate" to check if your JSON is valid<br>
+                   4. Copy or download the result</p>
+            </div>
+            <div class="info-section">
+                <h3>Features</h3>
+                <ul>
+                    <li>Format and beautify JSON</li>
+                    <li>Minify/compact JSON</li>
+                    <li>Validate JSON syntax</li>
+                    <li>Syntax highlighting</li>
+                    <li>Copy and download options</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Smart Empire Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/tools/json-formatter/app.js"></script>
+</body>
+</html>

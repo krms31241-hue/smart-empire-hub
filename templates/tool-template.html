@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TOOL_NAME}} - {{SITE_NAME}}</title>
+    <meta name="description" content="{{TOOL_DESCRIPTION}}">
+    <meta name="keywords" content="{{TOOL_KEYWORDS}}">
+    <link rel="canonical" href="{{SITE_URL}}/tools/{{TOOL_SLUG}}/">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/tool.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">⚡ {{SITE_NAME}}</a>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="/categories/">Categories</a>
+                <a href="/premium/">Premium</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="tool-container">
+        <div class="tool-header">
+            <h1>{{TOOL_NAME}}</h1>
+            <p>{{TOOL_DESCRIPTION}}</p>
+        </div>
+
+        <div class="tool-interface" id="tool-app">
+            <!-- Tool Content Will Be Injected Here -->
+        </div>
+
+        <div class="tool-info">
+            <div class="info-section">
+                <h3>How to use {{TOOL_NAME}}</h3>
+                <p>{{TOOL_HOW_TO_USE}}</p>
+            </div>
+            <div class="info-section">
+                <h3>Features</h3>
+                <ul>
+                    {{TOOL_FEATURES}}
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; {{YEAR}} {{SITE_NAME}}. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/utils.js"></script>
+    <script src="/tools/{{TOOL_SLUG}}/app.js"></script>
+</body>
+</html>

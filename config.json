@@ -1,0 +1,20 @@
+{
+  "site": {
+    "name": "Smart Empire Hub",
+    "url": "https://smartempirehub.com",
+    "description": "1000+ Free Online Tools - Developers, Designers, Students",
+    "logo": "/assets/logo.svg"
+  },
+  "features": {
+    "seo": true,
+    "sitemap": true,
+    "search": true,
+    "categories": true,
+    "premium": false
+  },
+  "monetization": {
+    "affiliate": true,
+    "ads": false,
+    "premium_tools": false
+  }
+}

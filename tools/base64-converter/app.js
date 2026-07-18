@@ -1,0 +1,3 @@
+document.getElementById('encode-btn').addEventListener('click',()=>{const input=document.getElementById('base64-input').value;try{document.getElementById('base64-output').value=btoa(unescape(encodeURIComponent(input)));}catch(e){alert('Invalid input');}});
+document.getElementById('decode-btn').addEventListener('click',()=>{const input=document.getElementById('base64-input').value;try{document.getElementById('base64-output').value=decodeURIComponent(escape(atob(input)));}catch(e){alert('Invalid Base64');}});
+document.getElementById('copy-btn').addEventListener('click',async()=>{await navigator.clipboard.writeText(document.getElementById('base64-output').value);alert('Copied!');});

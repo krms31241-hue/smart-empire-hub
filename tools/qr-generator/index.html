@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator - Smart Empire Hub</title>
+    <meta name="description" content="Generate scannable QR codes for URLs, text, and more instantly. Free online tool.">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/tool.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">⚡ Smart Empire Hub</a>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="/categories/">Categories</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="tool-container">
+        <div class="tool-header">
+            <h1>QR Code Generator</h1>
+            <p>Create custom QR codes for URLs, text, phone numbers, and more</p>
+        </div>
+
+        <div class="tool-interface">
+            <div class="qr-input-section">
+                <div class="form-group">
+                    <label for="qr-text">Enter Text or URL</label>
+                    <textarea id="qr-text" rows="3" placeholder="https://example.com or any text..."></textarea>
+                </div>
+                
+                <div class="qr-options">
+                    <div class="form-group">
+                        <label>Size</label>
+                        <select id="qr-size">
+                            <option value="128">Small (128x128)</option>
+                            <option value="256" selected>Medium (256x256)</option>
+                            <option value="512">Large (512x512)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Color</label>
+                        <input type="color" id="qr-color" value="#000000">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Background</label>
+                        <input type="color" id="qr-bg" value="#ffffff">
+                    </div>
+                </div>
+
+                <button id="generate-btn" class="btn-generate">Generate QR Code</button>
+            </div>
+
+            <div class="qr-output-section" id="qr-output" style="display: none;">
+                <div id="qrcode"></div>
+                <div class="qr-actions">
+                    <button id="download-png" class="btn-action">Download PNG</button>
+                    <button id="download-svg" class="btn-action">Download SVG</button>
+                    <button id="copy-image" class="btn-action">Copy Image</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tool-info">
+            <div class="info-section">
+                <h3>How to Use QR Generator</h3>
+                <p>1. Enter your text or URL in the input field<br>
+                   2. Customize size and colors (optional)<br>
+                   3. Click "Generate QR Code"<br>
+                   4. Download or copy your QR code</p>
+            </div>
+            <div class="info-section">
+                <h3>Features</h3>
+                <ul>
+                    <li>Generate QR codes for any text or URL</li>
+                    <li>Customizable size and colors</li>
+                    <li>Download as PNG or SVG</li>
+                    <li>100% free and runs in your browser</li>
+                    <li>No registration required</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Smart Empire Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/tools/qr-generator/app.js"></script>
+</body>
+</html>

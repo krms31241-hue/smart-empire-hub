@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator - Smart Empire Hub</title>
+    <meta name="description" content="Generate strong, secure passwords instantly. Customize length and character types.">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/tool.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">⚡ Smart Empire Hub</a>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="/categories/">Categories</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="tool-container">
+        <div class="tool-header">
+            <h1>Password Generator</h1>
+            <p>Create strong, secure, and random passwords instantly</p>
+        </div>
+
+        <div class="tool-interface">
+            <div class="password-display">
+                <input type="text" id="password-output" readonly placeholder="Your password will appear here">
+                <button id="copy-btn" class="btn-copy">Copy</button>
+            </div>
+
+            <div class="password-strength" id="strength-meter" style="display: none;">
+                <div class="strength-bar">
+                    <div class="strength-fill" id="strength-fill"></div>
+                </div>
+                <span id="strength-text">Strength: </span>
+            </div>
+
+            <div class="password-options">
+                <div class="option-group">
+                    <label>Password Length: <span id="length-value">16</span></label>
+                    <input type="range" id="password-length" min="4" max="64" value="16">
+                </div>
+
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="include-uppercase" checked>
+                        <span>Uppercase Letters (A-Z)</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="include-lowercase" checked>
+                        <span>Lowercase Letters (a-z)</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="include-numbers" checked>
+                        <span>Numbers (0-9)</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="include-symbols" checked>
+                        <span>Symbols (!@#$%^&*)</span>
+                    </label>
+                </div>
+
+                <button id="generate-btn" class="btn-generate">Generate Password</button>
+            </div>
+        </div>
+
+        <div class="tool-info">
+            <div class="info-section">
+                <h3>How to Use</h3>
+                <p>1. Choose your desired password length<br>
+                   2. Select character types to include<br>
+                   3. Click "Generate Password"<br>
+                   4. Copy your secure password</p>
+            </div>
+            <div class="info-section">
+                <h3>Why Use Strong Passwords?</h3>
+                <ul>
+                    <li>Protects your accounts from hackers</li>
+                    <li>Prevents unauthorized access</li>
+                    <li>Secures your personal data</li>
+                    <li>Meets security requirements</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Smart Empire Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/tools/password-generator/app.js"></script>
+</body>
+</html>

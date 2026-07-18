@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit Converter - Smart Empire Hub</title>
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/tool.css">
+</head>
+<body>
+<header class="header"><div class="container"><a href="/" class="logo">⚡ Smart Empire Hub</a></div></header>
+<main class="tool-container">
+<div class="tool-header"><h1>Unit Converter</h1><p>Convert between different units</p></div>
+<div class="tool-interface">
+<div class="form-group"><label>Category</label><select id="category"><option value="length">Length</option><option value="weight">Weight</option><option value="temperature">Temperature</option></select></div>
+<div class="form-group"><label>Value</label><input type="number" id="input-value" value="1"></div>
+<div class="form-group"><label>From</label><select id="from-unit"></select></div>
+<div class="form-group"><label>To</label><select id="to-unit"></select></div>
+<div class="form-group"><label>Result</label><input type="text" id="result" readonly></div>
+<button id="convert-btn" class="btn-generate">Convert</button>
+</div>
+</main>
+<footer class="footer"><div class="container"><p>&copy; 2026 Smart Empire Hub. All rights reserved.</p></div></footer>
+<script src="/tools/unit-converter/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{
+  "tools": [
+{"name":"Base64 Converter","slug":"base64-converter","category":"developer","description":"Encode and decode Base64 data instantly","keywords":"base64,encoder,decoder,base64 converter","version":"1.0.0","status":"active","featured":false}
+,
+{"name":"BMI Calculator","slug":"bmi-calculator","category":"health","description":"Calculate your Body Mass Index quickly","keywords":"bmi,calculator,body mass index,health","version":"1.0.0","status":"active","featured":false}
+,
+{"name":"Color Picker","slug":"color-picker","category":"design","description":"Pick colors and get HEX, RGB, and HSL codes","keywords":"color picker,color converter,hex,rgb,hsl","version":"1.0.0","status":"active","featured":false}
+,
+{"name":"Image Compressor","slug":"image-compressor","category":"image","description":"Compress images without losing quality","keywords":"image compressor,image optimizer,reduce image size","version":"1.0.0","status":"active","featured":false}
+,
+{
+  "name": "JSON Formatter",
+  "slug": "json-formatter",
+  "category": "developer",
+  "description": "Format and validate JSON data easily with syntax highlighting",
+  "keywords": "json, formatter, validator, beautifier, json tool",
+  "version": "1.0.0",
+  "status": "active",
+  "featured": true
+}
+,
+{"name":"Lorem Ipsum Generator","slug":"lorem-generator","category":"text","description":"Generate Lorem Ipsum placeholder text","keywords":"lorem ipsum,placeholder text,dummy text,generator","version":"1.0.0","status":"active","featured":false}
+,
+{
+  "name": "Password Generator",
+  "slug": "password-generator",
+  "category": "developer",
+  "description": "Create strong, secure, and memorable passwords instantly",
+  "keywords": "password, generator, secure password, random password, strong password",
+  "version": "1.0.0",
+  "status": "active",
+  "featured": true
+}
+,
+{
+  "name": "QR Generator",
+  "slug": "qr-generator",
+  "category": "developer",
+  "description": "Generate scannable QR codes for URLs, text, and more instantly",
+  "keywords": "qr code, generator, qr generator, barcode, scan",
+  "version": "1.0.0",
+  "status": "active",
+  "featured": true
+}
+,
+{"name":"Unit Converter","slug":"unit-converter","category":"converter","description":"Convert between different units of measurement","keywords":"unit converter,length,weight,temperature,conversion","version":"1.0.0","status":"active","featured":false}
+,
+{"name":"Word Counter","slug":"word-counter","category":"text","description":"Count words, characters, and lines in text","keywords":"word counter,character count,text analyzer","version":"1.0.0","status":"active","featured":false}
+
+  ]
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Picker - Smart Empire Hub</title>
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/tool.css">
+</head>
+<body>
+<header class="header"><div class="container"><a href="/" class="logo">⚡ Smart Empire Hub</a></div></header>
+<main class="tool-container">
+<div class="tool-header"><h1>Color Picker</h1><p>Pick colors and get HEX, RGB, and HSL codes</p></div>
+<div class="tool-interface"><input type="color" id="color-input" value="#3b82f6" style="width:100%;height:100px;margin-bottom:20px;">
+<div class="color-codes"><div class="code-item"><label>HEX</label><input type="text" id="hex-value" readonly></div><div class="code-item"><label>RGB</label><input type="text" id="rgb-value" readonly></div><div class="code-item"><label>HSL</label><input type="text" id="hsl-value" readonly></div></div>
+<button id="copy-hex" class="btn-action" style="margin-top:20px;">Copy HEX</button>
+</div>
+</main>
+<footer class="footer"><div class="container"><p>&copy; 2026 Smart Empire Hub. All rights reserved.</p></div></footer>
+<script src="/tools/color-picker/app.js"></script>
+</body>
+</html>

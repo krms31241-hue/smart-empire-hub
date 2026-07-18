@@ -1,0 +1,10 @@
+{
+  "name": "Password Generator",
+  "slug": "password-generator",
+  "category": "developer",
+  "description": "Create strong, secure, and memorable passwords instantly",
+  "keywords": "password, generator, secure password, random password, strong password",
+  "version": "1.0.0",
+  "status": "active",
+  "featured": true
+}

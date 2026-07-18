@@ -1,0 +1,10 @@
+{
+  "name": "JSON Formatter",
+  "slug": "json-formatter",
+  "category": "developer",
+  "description": "Format and validate JSON data easily with syntax highlighting",
+  "keywords": "json, formatter, validator, beautifier, json tool",
+  "version": "1.0.0",
+  "status": "active",
+  "featured": true
+}

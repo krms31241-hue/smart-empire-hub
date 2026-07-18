@@ -1,0 +1,28 @@
+.affiliate-page { padding: 120px 0 80px; }
+.hero-section { text-align: center; margin-bottom: 80px; }
+.hero-section h1 { font-size: 48px; font-weight: 800; margin-bottom: 16px; color: var(--accent-yellow); }
+.hero-section p { font-size: 18px; color: var(--text-secondary); margin-bottom: 32px; }
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.step-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+}
+
+.step-num {
+    width: 60px; height: 60px;
+    background: var(--accent-yellow);
+    color: #000;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px; font-weight: 800;
+    margin: 0 auto 20px;
+}

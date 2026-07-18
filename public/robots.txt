@@ -1,0 +1,15 @@
+# Robot.txt for Smart Empire Hub
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://smartempirehub.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin/private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /assets/
+Disallow: /scripts/

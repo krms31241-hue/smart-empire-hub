@@ -1,0 +1,10 @@
+{
+  "name": "QR Generator",
+  "slug": "qr-generator",
+  "category": "developer",
+  "description": "Generate scannable QR codes for URLs, text, and more instantly",
+  "keywords": "qr code, generator, qr generator, barcode, scan",
+  "version": "1.0.0",
+  "status": "active",
+  "featured": true
+}

@@ -1,0 +1,120 @@
+.contact-page {
+    padding: 120px 0 80px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-header h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.contact-header p {
+    font-size: 18px;
+    color: var(--text-secondary);
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: var(--bg-main);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent-yellow);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background: var(--accent-yellow);
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-submit:hover {
+    background: #f59e0b;
+}
+
+.contact-info {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 32px;
+    height: fit-content;
+}
+
+.contact-info h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    margin-bottom: 20px;
+}
+
+.info-item strong {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--accent-yellow);
+}
+
+.info-item a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.info-item a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}

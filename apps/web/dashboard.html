@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard - Smart Empire Hub</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/dashboard.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">⚡ Smart Empire Hub</a>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="/dashboard/" class="active">Dashboard</a>
+                <a href="/premium/">Upgrade</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard-page">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Welcome back, User!</h1>
+                <p>Here's what's happening with your account.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Current Plan</h3>
+                    <div class="stat-value">Free</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Tools Used</h3>
+                    <div class="stat-value">12</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Affiliate Earnings</h3>
+                    <div class="stat-value">$0.00</div>
+                </div>
+            </div>
+
+            <div class="dashboard-section">
+                <h2>Your Referral Link</h2>
+                <div class="referral-box">
+                    <input type="text" value="https://smartempirehub.com/?ref=user123" readonly id="ref-link">
+                    <button class="btn-copy" onclick="copyRef()">Copy</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Smart Empire Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function copyRef() {
+            const copyText = document.getElementById("ref-link");
+            copyText.select();
+            document.execCommand("copy");
+            alert("Referral link copied!");
+        }
+    </script>
+</body>
+</html>

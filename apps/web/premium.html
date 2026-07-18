@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Plans - Smart Empire Hub</title>
+    <meta name="description" content="Unlock advanced tools and remove ads with our Premium plans.">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/premium.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">⚡ Smart Empire Hub</a>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="/categories/">Categories</a>
+                <a href="/premium/" class="active">Premium</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="premium-page">
+        <div class="container">
+            <div class="page-header">
+                <div class="badge">Unlock Full Potential</div>
+                <h1>Choose Your Premium Plan</h1>
+                <p>Get access to advanced tools, remove ads, and boost your productivity.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Free Plan -->
+                <div class="pricing-card">
+                    <h3>Free</h3>
+                    <div class="price">$0<span>/forever</span></div>
+                    <ul class="features">
+                        <li>Access to 100+ basic tools</li>
+                        <li>Standard processing speed</li>
+                        <li>Ads supported</li>
+                        <li>Community support</li>
+                    </ul>
+                    <button class="btn-plan disabled">Current Plan</button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Pro</h3>
+                    <div class="price">$5<span>/month</span></div>
+                    <ul class="features">
+                        <li>Access to ALL 1000+ tools</li>
+                        <li>Priority processing speed</li>
+                        <li>No Ads</li>
+                        <li>Advanced API access</li>
+                        <li>Priority email support</li>
+                    </ul>
+                    <button class="btn-plan" onclick="openPayment('Pro', '5')">Get Pro Now</button>
+                </div>
+
+                <!-- Business Plan -->
+                <div class="pricing-card">
+                    <h3>Business</h3>
+                    <div class="price">$15<span>/month</span></div>
+                    <ul class="features">
+                        <li>Everything in Pro</li>
+                        <li>White-label tools</li>
+                        <li>Team collaboration (5 users)</li>
+                        <li>Dedicated account manager</li>
+                        <li>Custom integrations</li>
+                    </ul>
+                    <button class="btn-plan" onclick="openPayment('Business', '15')">Get Business</button>
+                </div>
+            </div>
+
+            <!-- Payment Modal -->
+            <div id="payment-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Complete Your Payment</h2>
+                    <p id="modal-plan-name"></p>
+                    <div class="payment-methods">
+                        <div class="method" onclick="selectMethod('InstaPay')">
+                            <i class="fas fa-university"></i> InstaPay
+                        </div>
+                        <div class="method" onclick="selectMethod('Vodafone Cash')">
+                            <i class="fas fa-mobile-alt"></i> Vodafone Cash
+                        </div>
+                        <div class="method" onclick="selectMethod('Orange Cash')">
+                            <i class="fas fa-mobile-alt"></i> Orange Cash
+                        </div>
+                        <div class="method" onclick="selectMethod('Etisalat Cash')">
+                            <i class="fas fa-mobile-alt"></i> Etisalat Cash
+                        </div>
+                        <div class="method" onclick="selectMethod('Visa/Mastercard')">
+                            <i class="fab fa-cc-visa"></i> Visa / Mastercard
+                        </div>
+                    </div>
+                    <div id="payment-instructions" style="display:none; margin-top:20px; padding:15px; background:rgba(255,255,255,0.05); border-radius:8px;">
+                        <p><strong>Step 1:</strong> Send <span id="pay-amount"></span> to our account via <span id="pay-method"></span>.</p>
+                        <p><strong>Step 2:</strong> Click the button below to send your Transaction ID via WhatsApp for instant activation.</p>
+                        <a id="whatsapp-link" href="#" target="_blank" class="btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Confirm Payment on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Smart Empire Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/premium.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Empire Hub - 1000+ Free Online Tools</title>
+    <meta name="description" content="Free, fast, and powerful online tools for developers, designers, and everyone.">
+    <meta name="theme-color" content="#fbbf24">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/assets/icons/icon-192x192.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.svg">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/home.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">⚡ Smart Empire Hub</a>
+            <nav class="nav">
+                <a href="/" class="active">Home</a>
+                <a href="/categories/">Categories</a>
+                <a href="/premium/">Premium</a>
+                <a href="/affiliate/">Affiliate</a>
+                <a href="/dashboard/">Dashboard</a>
+                <button id="lang-toggle" style="background:none;border:1px solid var(--border-color);color:#fff;padding:4px 10px;border-radius:4px;cursor:pointer;">AR/EN</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="badge">1000+ Free Online Tools</div>
+                <h1>All The Tools You Need<br><span>In One Place</span></h1>
+                <p>Free, fast, simple and powerful online tools for developers, designers, students and everyone.</p>
+                
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search tools (e.g. password, qr, json...)">
+                    <button class="search-btn">🔍</button>
+                </div>
+
+                <div class="features">
+                    <div class="feature"><i class="icon">✓</i><h4>100% Free</h4><p>No hidden fees</p></div>
+                    <div class="feature"><i class="icon">🔒</i><h4>Privacy First</h4><p>Runs in your browser</p></div>
+                    <div class="feature"><i class="icon">∞</i><h4>No Limits</h4><p>Unlimited usage</p></div>
+                    <div class="feature"><i class="icon">⚡</i><h4>Fast & Secure</h4><p>Reliable tools</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tools-section">
+            <div class="container">
+                <h2 class="section-title">🔥 Popular Tools</h2>
+                <div class="tools-grid" id="popular-tools">
+                    <!-- Tools will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Smart Empire Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/assets/js/utils.js"></script>
+    <script src="/assets/js/i18n.js"></script>
+    <script src="/assets/js/seo-schema.js"></script>
+    <script src="/assets/js/home.js"></script>
+    <script src="/assets/js/pwa.js"></script>
+    
+    <script>
+        // Language toggle
+        document.getElementById('lang-toggle').addEventListener('click', () => {
+            const current = localStorage.getItem('preferred_lang') || 'en';
+            setLanguage(current === 'en' ? 'ar' : 'en');
+        });
+    </script>
+</body>
+</html>

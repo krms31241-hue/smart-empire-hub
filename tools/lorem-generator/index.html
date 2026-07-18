@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lorem Ipsum Generator - Smart Empire Hub</title>
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/tool.css">
+</head>
+<body>
+<header class="header"><div class="container"><a href="/" class="logo">⚡ Smart Empire Hub</a></div></header>
+<main class="tool-container">
+<div class="tool-header"><h1>Lorem Ipsum Generator</h1><p>Generate placeholder text instantly</p></div>
+<div class="tool-interface">
+<div class="form-group"><label>Type</label><select id="lorem-type"><option value="paragraphs">Paragraphs</option><option value="words">Words</option><option value="bytes">Bytes</option></select></div>
+<div class="form-group"><label>Amount</label><input type="number" id="lorem-amount" value="3" min="1" max="100"></div>
+<button id="generate-lorem" class="btn-generate">Generate</button>
+<textarea id="lorem-output" rows="8" readonly style="margin-top:20px;"></textarea>
+<button id="copy-lorem" class="btn-action" style="margin-top:10px;">Copy</button>
+</div>
+</main>
+<footer class="footer"><div class="container"><p>&copy; 2026 Smart Empire Hub. All rights reserved.</p></div></footer>
+<script src="/tools/lorem-generator/app.js"></script>
+</body>
+</html>
