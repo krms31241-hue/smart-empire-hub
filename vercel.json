@@ -1,4 +1,5 @@
 {
+  "outputDirectory": ".",
   "rewrites": [
     { "source": "/", "destination": "/apps/web/index.html" },
     { "source": "/categories", "destination": "/apps/web/categories.html" },
@@ -6,6 +7,9 @@
     { "source": "/premium", "destination": "/apps/web/premium.html" },
     { "source": "/dashboard", "destination": "/apps/web/dashboard.html" },
     { "source": "/about", "destination": "/apps/web/about.html" },
-    { "source": "/contact", "destination": "/apps/web/contact.html" }
+    { "source": "/contact", "destination": "/apps/web/contact.html" },
+    { "source": "/tools/(.*)", "destination": "/tools/$1" },
+    { "source": "/assets/(.*)", "destination": "/assets/$1" },
+    { "source": "/public/(.*)", "destination": "/public/$1" }
   ]
 }
