@@ -1,14 +1,6 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "headers": [
-    {
-      "source": "/assets/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000" }
-      ]
-    }
-  ],
   "rewrites": [
     { "source": "/", "destination": "/apps/web/index.html" },
     { "source": "/categories", "destination": "/apps/web/categories.html" },
@@ -16,6 +8,9 @@
     { "source": "/premium", "destination": "/apps/web/premium.html" },
     { "source": "/dashboard", "destination": "/apps/web/dashboard.html" },
     { "source": "/about", "destination": "/apps/web/about.html" },
-    { "source": "/contact", "destination": "/apps/web/contact.html" }
+    { "source": "/contact", "destination": "/apps/web/contact.html" },
+    { "source": "/tools/:path*", "destination": "/tools/:path*" },
+    { "source": "/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/public/:path*", "destination": "/public/:path*" }
   ]
 }
