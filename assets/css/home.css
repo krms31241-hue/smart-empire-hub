@@ -71,12 +71,11 @@ button{font-family:inherit;cursor:pointer}
 .stat-item{text-align:center}
 .stat-number{font-size:20px;font-weight:800;margin-bottom:3px;background:linear-gradient(135deg,var(--purple),var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .stat-label{font-size:10px;color:var(--text-4)}
-.popular-tools-section,.categories-section,.features-section,.trust-section{margin-bottom:24px}
+.popular-tools-section,.categories-section,.features-section{margin-bottom:24px}
 .section-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
 .section-title{font-size:15px;font-weight:700;display:flex;align-items:center;gap:7px}
 .section-title i{color:var(--purple)}
 .view-all-link{font-size:11px;color:#818cf8;display:flex;align-items:center;gap:3px}
-.view-all-link:hover{color:var(--purple)}
 .tools-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
 .tool-card{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:14px;display:flex;align-items:center;gap:10px;transition:.15s;color:inherit}
 .tool-card:hover{border-color:var(--border-h);background:var(--bg-hover);transform:translateY(-1px)}
@@ -105,9 +104,6 @@ button{font-family:inherit;cursor:pointer}
 .feature-icon{width:44px;height:44px;border-radius:12px;background:rgba(108,99,255,.1);display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--purple);margin:0 auto 12px}
 .feature-card h3{font-size:13px;font-weight:700;margin-bottom:6px}
 .feature-card p{font-size:11px;color:var(--text-4);line-height:1.5}
-.trust-title{font-size:11px;color:var(--text-4);text-align:center;margin-bottom:14px}
-.trust-logos{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap}
-.trust-logo{font-size:13px;font-weight:800;color:var(--text-4)}
 .right-sidebar{width:var(--right-w);min-width:var(--right-w);border-left:1px solid var(--border);overflow-y:auto;background:var(--bg);padding:16px;display:flex;flex-direction:column;gap:14px}
 .ceo-card{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;overflow:hidden}
 .ceo-cover{height:72px;background:linear-gradient(135deg,#0d1a3a 0%,#1a0a3a 50%,#0a1a30 100%);position:relative}
@@ -138,10 +134,9 @@ blockquote{font-size:10px;color:var(--text-4);font-style:italic;line-height:1.6;
 .metric-label{font-size:9px;color:var(--text-4);margin-bottom:4px}
 .metric-value{font-size:16px;font-weight:800}
 .metric-change{font-size:9px;color:#34d399;font-weight:600;margin-top:2px}
-.install-banner{background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:14px;display:flex;align-items:center;gap:10px;margin-bottom:24px}
-.install-banner i{font-size:22px;color:var(--purple)}
-.install-banner h4{font-size:12px;font-weight:700;margin-bottom:2px}
-.install-banner p{font-size:10px;color:var(--text-4)}
+.trust-title{font-size:11px;color:var(--text-4);text-align:center;margin-bottom:14px}
+.trust-logos{display:flex;justify-content:center;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:24px}
+.trust-logo{font-size:13px;font-weight:800;color:var(--text-4)}
 footer{border-top:1px solid var(--border);padding:32px 20px;background:var(--bg)}
 .footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:24px}
 .footer-col h4{font-size:11px;font-weight:700;color:var(--text-2);margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px}
@@ -160,7 +155,7 @@ footer{border-top:1px solid var(--border);padding:32px 20px;background:var(--bg)
 .left-sidebar.open{display:flex}
 .mobile-menu-btn{display:flex}
 .tools-grid,.categories-grid{grid-template-columns:1fr 1fr}
-.features-grid{grid-column:1fr}
+.features-grid{grid-template-columns:1fr}
 .hero-title{font-size:22px}
 .hero-stats{gap:16px}
 .footer-grid{grid-template-columns:1fr 1fr}
