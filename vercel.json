@@ -1,6 +1,4 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
   "rewrites": [
     { "source": "/", "destination": "/apps/web/index.html" },
     { "source": "/categories", "destination": "/apps/web/categories.html" },
@@ -8,9 +6,6 @@
     { "source": "/premium", "destination": "/apps/web/premium.html" },
     { "source": "/dashboard", "destination": "/apps/web/dashboard.html" },
     { "source": "/about", "destination": "/apps/web/about.html" },
-    { "source": "/contact", "destination": "/apps/web/contact.html" },
-    { "source": "/tools/:path*", "destination": "/tools/:path*" },
-    { "source": "/assets/:path*", "destination": "/assets/:path*" },
-    { "source": "/public/:path*", "destination": "/public/:path*" }
+    { "source": "/contact", "destination": "/apps/web/contact.html" }
   ]
 }
