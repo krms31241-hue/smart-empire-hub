@@ -1,107 +1,192 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Empire Hub - 1000+ Free Online Tools</title>
-  <meta name="description" content="Free, fast, and powerful online tools for developers, designers, students and everyone. No registration required.">
-  <meta name="keywords" content="online tools, free tools, developer tools, QR generator, password generator, JSON formatter, base64 converter">
-  <meta name="author" content="Smart Empire Hub">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://smartempirehub.com/">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://smartempirehub.com/">
-  <meta property="og:title" content="Smart Empire Hub - 1000+ Free Online Tools">
-  <meta property="og:description" content="Free, fast, and powerful online tools for developers, designers, and everyone.">
-  <meta property="og:site_name" content="Smart Empire Hub">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Smart Empire Hub - 1000+ Free Online Tools">
-  <meta name="twitter:description" content="Free, fast, and powerful online tools for developers, designers, and everyone.">
-
-  <!-- PWA -->
-  <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#fbbf24">
-  <link rel="icon" href="/assets/icons/icon-192x192.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.svg">
-
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="stylesheet" href="/assets/css/home.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Empire Hub - 1000+ Free Online Tools</title>
+<meta name="description" content="Free, fast, and powerful online tools for developers, designers, students and everyone. No registration required.">
+<link rel="canonical" href="https://smartempirehub.com/">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#6c63ff">
+<link rel="icon" href="/assets/icons/icon-192x192.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/tabler-icons.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/home.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <a href="/" class="logo">⚡ Smart Empire Hub</a>
-      <nav class="nav">
-        <a href="/" class="active">Home</a>
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="s-icon"><i class="ti ti-bolt-filled"></i></div>
+      <div><div class="s-brand">Smart Empire Hub</div><div class="s-sub">1000+ Free Online Tools</div></div>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="/" class="nav-item active"><i class="ti ti-home"></i>Home</a>
+      <a href="/categories/" class="nav-item"><i class="ti ti-apps"></i>All Tools</a>
+      <a href="/categories/" class="nav-item"><i class="ti ti-category"></i>Categories</a>
+      <a href="#" class="nav-item"><i class="ti ti-robot"></i>AI Tools<span class="badge new">NEW</span></a>
+      <a href="#" class="nav-item"><i class="ti ti-trending-up"></i>Trending</a>
+      <a href="#" class="nav-item"><i class="ti ti-heart"></i>Favorites</a>
+      <a href="#" class="nav-item"><i class="ti ti-history"></i>History</a>
+    </nav>
+    <div class="sidebar-label">Account</div>
+    <nav class="sidebar-nav">
+      <a href="/dashboard/" class="nav-item"><i class="ti ti-layout-dashboard"></i>Dashboard</a>
+      <a href="#" class="nav-item"><i class="ti ti-tools"></i>My Tools</a>
+      <a href="#" class="nav-item"><i class="ti ti-briefcase"></i>Workspace<span class="badge pro">PRO</span></a>
+      <a href="#" class="nav-item"><i class="ti ti-api"></i>API<span class="badge soon">SOON</span></a>
+      <a href="#" class="nav-item"><i class="ti ti-robot-face"></i>Automation</a>
+      <a href="#" class="nav-item"><i class="ti ti-settings"></i>Settings</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="upgrade-box">
+        <div class="ub-title"><i class="ti ti-crown"></i>Upgrade to Pro</div>
+        <p>Unlock all premium tools and features</p>
+        <a href="/premium/" class="ub-btn">Upgrade Now</a>
+      </div>
+      <div class="usage-box">
+        <div class="usage-row"><span>Daily Usage</span><span>23 / 50</span></div>
+        <div class="usage-track"><div class="usage-fill" style="width:46%"></div></div>
+        <a href="/premium/" class="usage-link">Free Plan — Upgrade for more</a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="mbtn" id="menuBtn"><i class="ti ti-menu-2"></i></button>
+      <div class="tb-search">
+        <i class="ti ti-search"></i>
+        <input type="text" id="tbSearch" placeholder="Search for tools, categories, or features...">
+        <span class="kbd">⌘K</span>
+      </div>
+      <nav class="tb-links">
+        <a href="/categories/">Tools</a>
         <a href="/categories/">Categories</a>
-        <a href="/premium/">Premium</a>
-        <a href="/affiliate/">Affiliate</a>
-        <a href="/dashboard/">Dashboard</a>
-        <button id="lang-toggle" class="lang-btn">AR/EN</button>
+        <a href="#">AI Suite<span class="ai-tag">NEW</span></a>
+        <a href="#">Marketplace</a>
+        <a href="/premium/">Pricing</a>
       </nav>
+      <div class="tb-actions">
+        <button class="ibtn"><i class="ti ti-globe"></i></button>
+        <button class="ibtn"><i class="ti ti-moon"></i></button>
+        <button class="ibtn"><i class="ti ti-bell"></i><span class="dot">3</span></button>
+        <div class="avatar">K</div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="hero">
+        <h1>The World's Largest<br><span class="c1">Free Online Tools</span> <span class="c2">Platform</span></h1>
+        <p>Fast. Simple. Powerful. 100% Free tools for developers, designers, students, and everyday users.</p>
+        <div class="hero-search">
+          <i class="ti ti-search"></i>
+          <input type="text" id="heroSearch" placeholder="Search 1000+ tools...">
+          <button id="heroSearchBtn">Search</button>
+        </div>
+        <div class="tags">
+          <span class="tags-lbl">Popular:</span>
+          <a href="/search?q=pdf">PDF</a><a href="/search?q=image">Image</a><a href="/search?q=text">Text</a>
+          <a href="/search?q=json">JSON</a><a href="/search?q=converter">Converter</a><a href="/search?q=ai">AI</a>
+        </div>
+        <div class="stats">
+          <div><b style="color:#6c63ff">1000+</b><span>Free Tools</span></div>
+          <div><b style="color:#3b82f6">50+</b><span>Categories</span></div>
+          <div><b style="color:#10b981">10M+</b><span>Global Users</span></div>
+          <div><b style="color:#fbbf24">99.9%</b><span>Uptime</span></div>
+          <div><b style="color:#f97316">150+</b><span>Countries</span></div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="sec-head"><h2>Popular Tools</h2><a href="/categories/">View All <i class="ti ti-arrow-right"></i></a></div>
+        <div class="tools-grid" id="toolsGrid">
+          <div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>
+          <div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="sec-head"><h2>Browse by Categories</h2><a href="/categories/">View All <i class="ti ti-arrow-right"></i></a></div>
+        <div class="cats-grid">
+          <a href="/categories/developer/" class="cat"><div class="cat-icon" style="background:#0d1a30"><i class="ti ti-code" style="color:#3b82f6"></i></div><h3>Developer</h3><p>150+ tools</p></a>
+          <a href="/categories/text/" class="cat"><div class="cat-icon" style="background:#0d2010"><i class="ti ti-text-size" style="color:#10b981"></i></div><h3>Text</h3><p>120+ tools</p></a>
+          <a href="/categories/image/" class="cat"><div class="cat-icon" style="background:#2a1010"><i class="ti ti-photo" style="color:#f97316"></i></div><h3>Image</h3><p>180+ tools</p></a>
+          <a href="#" class="cat"><div class="cat-icon" style="background:#1a1010"><i class="ti ti-file-type-pdf" style="color:#ef4444"></i></div><h3>PDF</h3><p>90+ tools</p></a>
+          <a href="/categories/converter/" class="cat"><div class="cat-icon" style="background:#1a1a0a"><i class="ti ti-refresh" style="color:#fbbf24"></i></div><h3>Converter</h3><p>110+ tools</p></a>
+          <a href="#" class="cat"><div class="cat-icon" style="background:#1a0a30"><i class="ti ti-robot" style="color:#8b5cf6"></i></div><h3>AI</h3><p>80+ tools</p></a>
+          <a href="#" class="cat"><div class="cat-icon" style="background:#0a2020"><i class="ti ti-shield-check" style="color:#14b8a6"></i></div><h3>Security</h3><p>70+ tools</p></a>
+          <a href="/categories/" class="cat" style="opacity:.6"><div class="cat-icon" style="background:#1e2235"><i class="ti ti-dots" style="color:#6b7280"></i></div><h3>More</h3><p>50+ tools</p></a>
+        </div>
+      </section>
+
+      <div class="trust">
+        <span>Trusted by millions worldwide</span>
+        <div class="trust-logos">
+          <span style="color:#4285f4">Google</span><span style="color:#7fba00">Microsoft</span><span>Amazon</span>
+          <span style="color:#6e7681">GitHub</span><span style="color:#e50914">NETFLIX</span><span style="color:#1db954">Spotify</span><span style="color:#ff0000">Adobe</span>
+        </div>
+      </div>
+
+      <div class="feat-row">
+        <div class="feat"><div class="feat-icon" style="background:#1a2a10"><i class="ti ti-gift" style="color:#10b981"></i></div><div><h4>100% Free</h4><p>All tools are completely free. No hidden charges ever.</p></div></div>
+        <div class="feat"><div class="feat-icon" style="background:#1a1030"><i class="ti ti-user-x" style="color:#8b5cf6"></i></div><div><h4>No Sign Up Required</h4><p>Use any tool instantly. No registration needed.</p></div></div>
+        <div class="feat"><div class="feat-icon" style="background:#0a2020"><i class="ti ti-shield-lock" style="color:#14b8a6"></i></div><div><h4>Privacy Focused</h4><p>Your data stays on your device. We respect your privacy.</p></div></div>
+        <div class="feat"><div class="feat-icon" style="background:#0d1a30"><i class="ti ti-world" style="color:#3b82f6"></i></div><div><h4>Global Platform</h4><p>Available worldwide in 50+ languages.</p></div></div>
+        <div class="feat"><div class="feat-icon" style="background:#2a1a0a"><i class="ti ti-rocket" style="color:#f97316"></i></div><div><h4>Always Growing</h4><p>New tools added daily. Always improving.</p></div></div>
+        <div class="feat"><div class="feat-icon" style="background:#1a1010"><i class="ti ti-code" style="color:#ef4444"></i></div><div><h4>Developer Friendly</h4><p>Built for developers. By developers.</p></div></div>
+      </div>
+    </main>
+  </div>
+
+  <aside class="rightbar">
+    <div class="ceo-card">
+      <div class="ceo-bg"></div>
+      <div class="ceo-avatar-wrap">
+        <div class="ceo-avatar">KM<div class="ceo-check"><i class="ti ti-check"></i></div></div>
+      </div>
+      <div class="ceo-body">
+        <div class="ceo-name">Karam Mahmoud</div>
+        <div class="ceo-role">Founder &amp; CEO</div>
+        <div class="ceo-badge"><i class="ti ti-crown"></i>Executive Director</div>
+        <blockquote>"Building the future, one tool at a time."</blockquote>
+        <div class="ceo-socials">
+          <a href="#"><i class="ti ti-world"></i></a><a href="#"><i class="ti ti-brand-linkedin"></i></a>
+          <a href="#"><i class="ti ti-brand-github"></i></a><a href="#"><i class="ti ti-brand-x"></i></a><a href="#"><i class="ti ti-brand-youtube"></i></a>
+        </div>
+        <div class="ceo-ratings">
+          <div><span>Vision</span><div class="stars">★★★★★</div></div>
+          <div><span>Innovation</span><div class="stars">★★★★★</div></div>
+          <div><span>Leadership</span><div class="stars">★★★★★</div></div>
+        </div>
+      </div>
     </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <div class="badge">1000+ Free Online Tools</div>
-        <h1>All The Tools You Need<br><span>In One Place</span></h1>
-        <p>Free, fast, simple and powerful online tools for developers, designers, students and everyone.</p>
-
-        <div class="search-container">
-          <input type="text" class="search-input" id="hero-search" placeholder="Search tools (e.g. password, qr, json...)" autocomplete="off">
-          <button class="search-btn" id="hero-search-btn" aria-label="Search">🔍</button>
-        </div>
-
-        <div class="features">
-          <div class="feature"><i class="icon">✓</i><h4>100% Free</h4><p>No hidden fees</p></div>
-          <div class="feature"><i class="icon">🔒</i><h4>Privacy First</h4><p>Runs in your browser</p></div>
-          <div class="feature"><i class="icon">∞</i><h4>No Limits</h4><p>Unlimited usage</p></div>
-          <div class="feature"><i class="icon">⚡</i><h4>Fast & Secure</h4><p>No data leaves your device</p></div>
-        </div>
+    <div class="rb-card">
+      <div class="rb-head"><div><div class="rb-title">AI Power Suite<span class="ai-new">NEW</span></div><div class="rb-sub">AI tools to boost your productivity</div></div><div style="font-size:26px">🤖</div></div>
+      <div class="ai-grid">
+        <div class="ai-item"><div class="ai-dot" style="background:#1a1030"><i class="ti ti-pencil" style="color:#8b5cf6"></i></div><div><h5>AI Writer</h5><p>Generate content</p></div></div>
+        <div class="ai-item"><div class="ai-dot" style="background:#0a1a30"><i class="ti ti-code" style="color:#3b82f6"></i></div><div><h5>AI Code Helper</h5><p>Generate code</p></div></div>
+        <div class="ai-item"><div class="ai-dot" style="background:#2a1010"><i class="ti ti-photo" style="color:#f97316"></i></div><div><h5>AI Image Tools</h5><p>Edit with AI</p></div></div>
+        <div class="ai-item"><div class="ai-dot" style="background:#0a2010"><i class="ti ti-message-chatbot" style="color:#10b981"></i></div><div><h5>AI Chat Assistant</h5><p>Ask anything</p></div></div>
       </div>
-    </section>
-
-    <section class="tools-section">
-      <div class="container">
-        <h2 class="section-title">🔥 Popular Tools</h2>
-        <div class="tools-grid" id="popular-tools">
-          <div class="loading-skeleton"></div>
-          <div class="loading-skeleton"></div>
-          <div class="loading-skeleton"></div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-links">
-        <a href="/about/">About</a>
-        <a href="/contact/">Contact</a>
-        <a href="/premium/">Premium</a>
-        <a href="/affiliate/">Affiliate</a>
-      </div>
-      <p>&copy; 2026 Smart Empire Hub. All rights reserved.</p>
+      <button class="explore-btn">Explore AI Suite ✦</button>
     </div>
-  </footer>
 
-  <script src="/assets/js/utils.js"></script>
-  <script src="/assets/js/i18n.js"></script>
-  <script src="/assets/js/seo-schema.js"></script>
-  <script src="/assets/js/home.js"></script>
-  <script src="/assets/js/pwa.js"></script>
+    <div class="rb-card">
+      <div class="rb-head"><div><div class="rb-title">Platform Live Dashboard</div><div class="rb-sub">Real-time platform insights</div></div><div class="period">7D</div></div>
+      <div class="metrics">
+        <div class="mrow"><div class="mi" style="background:#1a1030"><i class="ti ti-users" style="color:#8b5cf6"></i></div><span class="mn">Users</span><span class="mv">10,234,567</span><span class="mc">+12.5%</span></div>
+        <div class="mrow"><div class="mi" style="background:#0a1a30"><i class="ti ti-eye" style="color:#3b82f6"></i></div><span class="mn">Page Views</span><span class="mv">48,765,432</span><span class="mc">+18.3%</span></div>
+        <div class="mrow"><div class="mi" style="background:#0a2010"><i class="ti ti-bolt" style="color:#10b981"></i></div><span class="mn">Tool Executions</span><span class="mv">182,456,789</span><span class="mc">+22.1%</span></div>
+        <div class="mrow"><div class="mi" style="background:#1a2010"><i class="ti ti-cash" style="color:#fbbf24"></i></div><span class="mn">Revenue</span><span class="mv">$45,678</span><span class="mc">+15.7%</span></div>
+      </div>
+      <div class="chart"><div style="height:35%"></div><div style="height:50%"></div><div style="height:42%"></div><div style="height:65%"></div><div style="height:55%"></div><div style="height:78%"></div><div style="height:90%;background:#3b82f6"></div></div>
+    </div>
+  </aside>
 
-  <script>
-    document.getElementById('lang-toggle').addEventListener('click', () => {
-      const current = localStorage.getItem('preferred_lang') || 'en';
-      setLanguage(current === 'en' ? 'ar' : 'en');
-    });
-  </script>
+</div>
+<script src="/assets/js/home.js"></script>
 </body>
 </html>
