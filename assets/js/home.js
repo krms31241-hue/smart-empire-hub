@@ -9,7 +9,7 @@ async function loadTools(){
     if(!r.ok)throw 0;
     const data=await r.json();
     if(!Array.isArray(data?.tools)||!data.tools.length)throw 0;
-    g.innerHTML=data.tools.slice(0,8).map(t=>{const m=gm(t.slug);return `<a href="/tools/${esc(t.slug)}/" class="tool-card"><div class="ti" style="background:${m.b};width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center">${m.i}</div><div><h4>${esc(t.name)}</h4><p>${esc(t.description)}</p></div></a>`}).join('');
+    g.innerHTML=data.tools.slice(0,8).map(t=>{const m=gm(t.slug);return `<a href="/tools/${esc(t.slug)}/" class="tool-card"><div class="ti" style="background:${m.b}">${m.i}</div><div><h4>${esc(t.name)}</h4><p>${esc(t.description)}</p></div></a>`}).join('');
   }catch{
     g.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:30px;color:#4b5563">Tools coming soon. <a href="/categories/" style="color:#818cf8">Browse categories</a></div>';
   }
@@ -24,6 +24,12 @@ function setupSearch(){
 }
 function setupMenu(){
   const btn=document.getElementById('menuBtn'), sb=document.querySelector('.sidebar');
-  btn?.addEventListener('click',()=>sb.classList.toggle('open'));
+  if(!btn||!sb)return;
+  const overlay=document.createElement('div');
+  overlay.className='sidebar-overlay';
+  document.body.appendChild(overlay);
+  const close=()=>{sb.classList.remove('open');overlay.classList.remove('show')};
+  btn.addEventListener('click',()=>{sb.classList.toggle('open');overlay.classList.toggle('show')});
+  overlay.addEventListener('click',close);
 }
 document.addEventListener('DOMContentLoaded',()=>{loadTools();setupSearch();setupMenu()});
