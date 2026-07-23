@@ -133,3 +133,7 @@ blockquote{font-size:10px;color:#4b5563;font-style:italic;padding:8px 10px;backg
 /* Force same layout on all screen sizes - horizontal scroll instead of hiding */
 html{overflow-x:auto}
 .app{min-width:1400px}
+
+/* Force same layout on all screen sizes - horizontal scroll instead of hiding */
+html{overflow-x:auto}
+.app{min-width:1400px}
