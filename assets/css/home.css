@@ -136,3 +136,6 @@ html{overflow-x:auto}
 /* Force same layout on all screen sizes - horizontal scroll instead of hiding */
 html{overflow-x:auto}
 .app{min-width:1400px}
+
+/* Fix scaling - keep natural size, allow horizontal scroll instead of shrinking */
+html,body{width:1400px}
